@@ -12,11 +12,17 @@
 	<properties>
 		<javaee.version>8.0</javaee.version>
 		<spring.version>5.2.6.RELEASE</spring.version>
+		<spring.security.version>5.3.2.RELEASE</spring.security.version>
 		
 	</properties>
 
 	<dependencies>
-
+        <!-- shopping backend  -->
+        <dependency>
+              <groupId>com.kk</groupId>
+			  <artifactId>shoppingbackend</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
 		<!-- JAVA EE -->
 		<dependency>
@@ -35,19 +41,62 @@
 		</dependency>
 
 		<!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+			 <exclusion>
+			   <groupId>commons-logging</groupId>
+			   <artifactId>commons-logging</artifactId>
+			 </exclusion>
+			</exclusions>
+		</dependency>
+		
 		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
+       
+       <!-- webflow -->
+       
+       <!-- https://mvnrepository.com/artifact/org.springframework.webflow/spring-webflow -->
+		<dependency>
+		    <groupId>org.springframework.webflow</groupId>
+		    <artifactId>spring-webflow</artifactId>
+		    <version>2.5.0.RELEASE</version>
+		</dependency>
+       
+       
+ 
 		<!-- JSTL -->
 
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+		</dependency>
+	
+	
+	<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.security.version}</version>
 		</dependency>
 	    
 	</dependencies>

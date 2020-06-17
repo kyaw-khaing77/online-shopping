@@ -90,6 +90,12 @@ footer {
 	
 }
 
+
+.adminDataTableImg {
+	width:50px;
+	height: 50px;
+}
+
 .has-success {
 	color: #4582ec;
 }
@@ -100,8 +106,8 @@ footer {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 30px;
 }
 
 /* Hide default HTML checkbox */
@@ -116,6 +122,7 @@ footer {
   right: 0;
   bottom: 0;
   background-color: #ccc;
+  border-radius:30px;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -123,17 +130,18 @@ footer {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 20px;
+  width: 20px;
+  left: 5px;
+  bottom: 5px;
+  border-radius:50%;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #1863E6;
 }
 
 input:focus + .slider {
@@ -148,7 +156,7 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 30px;
 }
 
 .slider.round:before {
@@ -159,6 +167,7 @@ input:checked + .slider:before {
 .help-block {
 	color: #ff0000;
 }
+
 
 
 /*Shopping Cart*/
@@ -239,3 +248,11 @@ input:checked + .slider:before {
 		background:url(../images/pre-loader.gif) 50% no-repeat #fff
 }
 
+
+.table-responsive{
+	overflow-x:inherit;
+}
+.cart-img{
+	width:150px;
+	height:100px;
+}
